@@ -1,0 +1,236 @@
+<!DOCTYPE html>
+<html lang="en"><head><meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>Noori Foods – Rawalpindi</title>
+<link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@500;600;700&family=Plus+Jakarta+Sans:wght@400;500;600;700&display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@400,0..1&display=swap" rel="stylesheet">
+<style>
+:root{--bg:#fbf9f5;--card:#fff;--tx:#1b1c1a;--mu:#554244;--hd:#37000e;--bt:#580c1f;--gd:#fed65b;--gt:#745c00;--ln:#e4e2de;--soft:#efeeea;--dk:#171719;box-sizing:border-box;padding-top:env(safe-area-inset-top,0px);padding-bottom:env(safe-area-inset-bottom,0px);color-scheme:light}
+@media(prefers-color-scheme:dark){:root:not([data-theme="light"]){--bg:#151213;--card:#221d1e;--tx:#f2ede9;--mu:#bfb0b1;--hd:#ffb2ba;--bt:#8a2a3f;--gt:#e9c349;--ln:#3a3234;--soft:#2c2527;--dk:#0d0b0c;color-scheme:dark}}
+:root[data-theme="dark"]{--bg:#151213;--card:#221d1e;--tx:#f2ede9;--mu:#bfb0b1;--hd:#ffb2ba;--bt:#8a2a3f;--gt:#e9c349;--ln:#3a3234;--soft:#2c2527;--dk:#0d0b0c;color-scheme:dark}
+html{scroll-padding-top:env(safe-area-inset-top,0px)}
+*{box-sizing:border-box}body{margin:0;background:var(--bg);color:var(--tx);font:15px/1.5 "Plus Jakarta Sans",system-ui,sans-serif}
+body::before{content:"";position:fixed;inset:0 0 auto;height:env(safe-area-inset-top,0px);background:var(--bg);z-index:60}
+h1,h2,h3,.sf{font-family:"Playfair Display",Georgia,serif;color:var(--hd);margin:0}
+h2{font-size:24px;font-weight:600}h3{font-size:18px}p{margin:0}
+.material-symbols-outlined{font-family:"Material Symbols Outlined";font-weight:400;font-style:normal;font-size:20px;line-height:1;display:inline-block;vertical-align:middle;font-feature-settings:"liga"}
+header{position:sticky;top:env(safe-area-inset-top,0px);z-index:50;background:var(--bg);border-bottom:1px solid var(--ln)}
+.hi{max-width:560px;margin:0 auto;padding:10px 16px;display:flex;align-items:center;justify-content:space-between;gap:8px}
+.logo{font-family:"Playfair Display",serif;font-size:24px;color:var(--hd);line-height:1}.logo b{color:var(--gt);font-weight:500}
+.sm{display:block;font-size:10px;letter-spacing:.12em;text-transform:uppercase;color:var(--mu)}
+.pill{display:inline-flex;align-items:center;gap:6px;font-size:10px;font-weight:700;letter-spacing:.06em;text-transform:uppercase;padding:3px 9px;border-radius:99px;background:var(--soft);color:var(--tx)}
+.dot{width:7px;height:7px;border-radius:50%;background:var(--gt)}.off .dot{background:#ba1a1a}
+.ic{width:42px;height:42px;border-radius:50%;background:var(--soft);color:var(--hd);display:grid;place-items:center;text-decoration:none}
+.app{max-width:560px;margin:0 auto;padding:0 16px 170px}
+section.pg{display:none}section.pg.on{display:block}
+.hero{margin-top:16px;border-radius:16px;padding:24px 20px;color:#fff;background:radial-gradient(circle at 85% 10%,#8a2a3f,transparent 55%),linear-gradient(160deg,#37000e,#580c1f)}
+.hero h1{color:#fff;font-size:30px;line-height:1.2;margin:8px 0}.hero p{color:#ffd9dc}
+.kick{font-size:11px;letter-spacing:.14em;text-transform:uppercase;font-weight:700;color:var(--gt)}.hero .kick{color:#ffe088}
+.bdg{display:inline-flex;gap:6px;align-items:center;background:var(--gd);color:#5a4600;border-radius:99px;padding:4px 12px;font-size:12px;font-weight:700}
+.row{display:flex;gap:8px;flex-wrap:wrap;margin-top:16px}
+.b{border:0;border-radius:10px;padding:11px 16px;font:600 14px "Plus Jakarta Sans",sans-serif;background:var(--bt);color:#fff;cursor:pointer;text-decoration:none;display:inline-flex;align-items:center;justify-content:center;gap:6px}
+.b.g{background:var(--gd);color:#4a3a00}.b.l{background:var(--soft);color:var(--hd)}.b.w{flex:1}
+.b:disabled,.b[aria-disabled="true"]{opacity:.45;cursor:not-allowed}
+.sec{margin-top:32px}.sec>.kick{display:block;margin-bottom:2px}
+.grid{display:grid;grid-template-columns:1fr 1fr;gap:8px;margin-top:12px}
+.fc{background:var(--card);border:1px solid var(--ln);border-radius:12px;padding:14px}.fc .material-symbols-outlined{color:var(--bt);background:var(--soft);border-radius:50%;padding:7px;font-size:22px;margin-bottom:6px}
+.fc b{display:block;color:var(--hd)}.fc span.t{font-size:13px;color:var(--mu)}
+.it{display:flex;gap:12px;background:var(--card);border:1px solid var(--ln);border-radius:12px;padding:10px;margin-top:10px}
+.it.so{opacity:.6}.th{flex:none;width:84px;height:84px;border-radius:10px;display:grid;place-items:center;font-size:38px;background:linear-gradient(135deg,#580c1f,#8a2a3f 60%,#c9a227)}
+.ib{flex:1;min-width:0}.ib b{color:var(--hd)}.ib p{font-size:13px;color:var(--mu)}.pr{display:flex;justify-content:space-between;align-items:center;margin-top:6px}.pr .sf{font-size:18px;font-weight:700}
+.pr .b{padding:7px 14px;border-radius:99px}
+.pills{display:flex;gap:8px;overflow-x:auto;padding:12px 0 4px;position:sticky;top:calc(env(safe-area-inset-top,0px) + 62px);background:var(--bg);z-index:5}
+.pills button{flex:none;border:0;border-radius:99px;padding:7px 14px;font:600 12px "Plus Jakarta Sans",sans-serif;background:var(--soft);color:var(--tx);cursor:pointer}.pills button.a{background:var(--bt);color:#fff}
+.note{display:flex;gap:10px;background:var(--soft);border-radius:12px;padding:12px;font-size:13px;color:var(--mu);margin-top:12px}.note.bad{background:#ffdad6;color:#93000a}
+.stats{display:grid;grid-template-columns:repeat(3,1fr);gap:8px;margin-top:14px;text-align:center}
+.st{background:var(--card);border-radius:12px;padding:12px 4px}.st b{display:block;font-size:18px;color:var(--hd)}.st span{font-size:10px;text-transform:uppercase;letter-spacing:.06em;color:var(--mu)}
+.story{background:var(--soft);border-radius:16px;padding:24px 18px;text-align:center}.story p{color:var(--mu);margin-top:8px}
+.rv{background:var(--card);border:1px solid var(--ln);border-radius:12px;padding:14px;margin-top:10px}.rv small{color:var(--mu)}.rv p{font-style:italic;margin-top:6px;color:var(--mu)}
+.card{background:var(--card);border:1px solid var(--ln);border-radius:14px;padding:16px;margin-top:12px}
+.seg{display:flex;background:var(--soft);border-radius:12px;padding:4px;gap:4px;margin-top:12px}.seg button{flex:1;border:0;border-radius:9px;padding:9px;font:600 13px "Plus Jakarta Sans",sans-serif;background:none;color:var(--mu);cursor:pointer}.seg button.a{background:var(--bt);color:#fff}
+label{display:block;font-size:11px;font-weight:700;letter-spacing:.06em;text-transform:uppercase;color:var(--hd);margin:12px 0 4px}
+input,select,textarea{width:100%;border:1px solid var(--ln);border-radius:10px;padding:10px 12px;font:15px "Plus Jakarta Sans",sans-serif;background:var(--bg);color:var(--tx)}
+.cl{display:flex;justify-content:space-between;align-items:center;gap:10px;padding:10px 0;border-bottom:1px solid var(--ln)}.cl:last-child{border:0}
+.q{display:flex;align-items:center;gap:8px}.q button{width:28px;height:28px;border-radius:50%;border:0;background:var(--soft);color:var(--hd);font-weight:700;cursor:pointer}
+.tot{display:flex;justify-content:space-between;margin-top:8px;color:var(--mu)}.tot.g{color:var(--hd);font-weight:700;font-size:18px}
+pre{white-space:pre-wrap;font:12px/1.6 ui-monospace,Menlo,monospace;background:var(--soft);border-radius:12px;padding:12px;margin:8px 0 0;overflow-x:auto}
+.pay{display:flex;gap:10px;align-items:flex-start;background:var(--card);border:1px solid var(--ln);border-radius:12px;padding:12px;margin-top:8px;cursor:pointer}.pay input{width:auto;margin-top:4px}
+.fl{position:fixed;left:0;right:0;bottom:calc(72px + env(safe-area-inset-bottom,0px));z-index:40;padding:0 16px;display:none}.fl.on{display:block}
+.fl>div{max-width:528px;margin:0 auto;background:var(--bt);color:#fff;border-radius:12px;padding:10px 12px;display:flex;justify-content:space-between;align-items:center;box-shadow:0 10px 30px rgba(55,0,14,.35)}
+nav{position:fixed;left:0;right:0;bottom:0;z-index:50;background:var(--bg);border-top:1px solid var(--ln);padding-bottom:env(safe-area-inset-bottom,0px)}
+nav div{max-width:560px;margin:0 auto;height:68px;display:flex;justify-content:space-around;align-items:center}
+nav a{display:flex;flex-direction:column;align-items:center;gap:2px;font-size:11px;font-weight:600;color:var(--mu);text-decoration:none;min-width:56px;position:relative}nav a.a{color:var(--bt)}
+.bg2{position:absolute;top:-6px;right:6px;min-width:18px;height:18px;border-radius:9px;background:var(--bt);color:#fff;font-size:10px;display:grid;place-items:center;padding:0 4px}
+.foot{margin-top:32px;text-align:center;font-size:12px;color:var(--mu)}.foot a{color:var(--mu)}
+.adm{display:flex;gap:10px;align-items:center;justify-content:space-between;flex-wrap:wrap}.adm input{width:110px}
+.empty{text-align:center;color:var(--mu);padding:28px 0}
+</style></head>
+<body>
+<header><div class="hi"><div><div class="logo">Noori <b>Foods</b></div><span class="sm">Rawalpindi</span></div>
+<span class="pill" id="sp"><span class="dot"></span><span id="st">Closes 1 AM</span></span>
+<a class="ic" href="tel:03336666809" aria-label="Call Noori Foods"><span class="material-symbols-outlined">call</span></a></div></header>
+<main class="app">
+
+<section class="pg" id="p-home">
+<div class="hero"><span class="bdg"><span class="material-symbols-outlined" style="font-size:16px">star</span>4.1/5 Google rating (1,172 reviews)</span>
+<div class="kick" style="margin-top:14px">The Royal Dastarkhwan</div>
+<h1>Experience the True Taste of Pakistani Cuisine</h1>
+<p>From sizzling karahis and charcoal BBQ to royal platters, discover Noori Foods on Adiyala Road.</p>
+<div class="row"><a class="b g w" href="#menu"><span class="material-symbols-outlined">restaurant_menu</span>Explore menu</a><a class="b l w" href="https://wa.me/923336666809" target="_blank" rel="noopener"><span class="material-symbols-outlined">chat</span>Order on WhatsApp</a></div>
+<p style="margin-top:14px;font-size:13px">Kitchen serving warm till 1:00 AM every night</p></div>
+
+<div class="sec"><span class="kick">Heritage experience</span><h2>Distinguished hospitality</h2>
+<div class="grid">
+<div class="fc"><span class="material-symbols-outlined">skillet</span><b>Pakistani cuisine</b><span class="t">Pure desi ghee and freshly ground masalas</span></div>
+<div class="fc"><span class="material-symbols-outlined">deck</span><b>Outdoor lawns</b><span class="t">Open-air family seating under the stars</span></div>
+<div class="fc"><span class="material-symbols-outlined">fireplace</span><b>Cozy fireplace</b><span class="t">Winter evening warmth with crackling embers</span></div>
+<div class="fc"><span class="material-symbols-outlined">groups</span><b>Family dining</b><span class="t">Private chambers and large banquet tables</span></div>
+<div class="fc"><span class="material-symbols-outlined">takeout_dining</span><b>Express takeaway</b><span class="t">Sealed hot packaging for maximum aroma</span></div>
+<div class="fc"><span class="material-symbols-outlined">moped</span><b>Home delivery</b><span class="t">Doorstep delivery across Rawalpindi</span></div></div></div>
+
+<div class="sec"><span class="kick">Chef specialties</span><h2>Signature feasts &amp; platters</h2><p style="color:var(--mu);margin-top:4px">Mughal-inspired dishes made to order over charcoal and high-flame iron woks.</p><div id="hd"></div>
+<div class="row"><a class="b w" href="#menu">See full menu</a></div></div>
+
+<div class="sec story"><span class="kick">Heritage on Adiyala Road</span><h2>Crafting unrivaled feasts for Rawalpindi families</h2>
+<p>Rooted in the hospitality of Potohar and Mughal dawat culture, Noori Foods prepares every stew, skewer and bread over natural flames.</p>
+<div class="stats"><div class="st"><b>100%</b><span>Desi halal</span></div><div class="st"><b>1,170+</b><span>Google reviews</span></div><div class="st"><b>1:00 AM</b><span>Late dining</span></div></div></div>
+</section>
+
+<section class="pg" id="p-menu">
+<div class="pills" id="pl"></div>
+<div class="note"><span class="material-symbols-outlined">scale</span><span>Karahi and fish weights are verified live before cooking. Kitchen closes at <b>1:00 AM</b>.</span></div>
+<div class="note bad" id="offn" hidden><span class="material-symbols-outlined">block</span><span>The kitchen is not taking online orders right now. Please call 0333 6666809.</span></div>
+<div id="ml"></div>
+</section>
+
+<section class="pg" id="p-checkout">
+<div class="sec" style="margin-top:20px"><span class="kick">Adiyala Road kitchen · Est. prep 25–35 min</span><h2>Royal feast checkout</h2></div>
+<div class="seg"><button class="a" data-mode="delivery">Home delivery</button><button data-mode="pickup">Takeaway / pickup</button></div>
+<div class="card" id="df"><label for="f-n">Name</label><input id="f-n" placeholder="Full name" autocomplete="name">
+<label for="f-p">WhatsApp / mobile</label><input id="f-p" type="tel" placeholder="03XX XXXXXXX" autocomplete="tel">
+<label for="f-a">Area</label><select id="f-a"><option>Munawar Colony / Adiyala Rd</option><option>Askari 14 / Sector D</option><option>Dhamial Road / Gulshan-e-Saeed</option><option>Tulsa Road / Lalazar</option><option>Saddar Cantt / Peshawar Rd</option><option>Bahria Town Phase 1–6</option></select>
+<label for="f-l">Landmark</label><input id="f-l" placeholder="Near school, mosque or bakery">
+<label for="f-d">Street &amp; house address</label><textarea id="f-d" rows="2" placeholder="House #, street, gate code"></textarea>
+<label for="f-o">Notes (optional)</label><input id="f-o" placeholder="Spice level, extra chutney…"></div>
+<div class="card" id="pk" hidden><b class="sf" style="font-size:18px">Kitchen pickup counter</b><p style="color:var(--mu);margin-top:4px">Noori Foods, Adiyala Road, opposite National Saving Center, Munawar Colony, Rawalpindi. No delivery fee.</p>
+<label for="f-n2">Name</label><input id="f-n2" placeholder="Name for the order"></div>
+<div class="sec" style="margin-top:20px"><h2>Your order</h2><div class="card" id="cl"></div></div>
+<div class="sec" style="margin-top:20px"><h2>Confirmation &amp; payment</h2>
+<label class="pay" style="text-transform:none;letter-spacing:0;font-size:15px;color:inherit"><input type="radio" name="py" value="WhatsApp direct confirmation" checked><span><b>WhatsApp direct desk</b><br><small style="color:var(--mu)">Your order is sent as a message to +92 333 6666809 and the kitchen confirms.</small></span></label>
+<label class="pay" style="text-transform:none;letter-spacing:0;font-size:15px;color:inherit"><input type="radio" name="py" value="Cash on delivery / EasyPaisa"><span><b>Cash on delivery / EasyPaisa</b><br><small style="color:var(--mu)">Pay the rider in cash or by EasyPaisa/JazzCash.</small></span></label></div>
+<div class="sec" style="margin-top:20px"><div class="adm"><h2 style="font-size:18px">WhatsApp message preview</h2><button class="b l" id="cp" style="padding:6px 12px"><span class="material-symbols-outlined" style="font-size:16px">content_copy</span><span id="cpt">Copy</span></button></div><pre id="pv"></pre>
+<div class="row"><a class="b w" id="wa" href="#" target="_blank" rel="noopener"><span class="material-symbols-outlined">chat</span>Send order via WhatsApp</a></div>
+<div class="row"><a class="b l w" href="tel:03336666809"><span class="material-symbols-outlined">call</span>Call kitchen</a></div></div>
+<div class="note" style="margin-top:24px"><span class="material-symbols-outlined">diversity_1</span><span><b>Hosting a dawat or 10+ guests?</b> Ask about catering, whole roast raan and sealed degs. <a href="https://wa.me/923336666809?text=Hello%20Noori%20Foods%2C%20I%20would%20like%20to%20inquire%20about%20catering%20for%2010%2B%20guests." target="_blank" rel="noopener" style="color:var(--bt);font-weight:700">Inquire on WhatsApp</a></span></div>
+</section>
+
+<section class="pg" id="p-visit">
+<div class="card" style="margin-top:20px"><div class="adm"><h2>Noori Foods Rawalpindi</h2><span class="pill">Open daily</span></div>
+<p style="color:var(--mu);margin-top:6px">Opposite National Saving Center, Munawar Colony, Adiyala Road, Rawalpindi.</p>
+<div class="note"><span class="material-symbols-outlined">schedule</span><span><b>Daily 12:00 PM – 1:00 AM</b><br>Late-night kitchen</span></div>
+<div class="row"><a class="b w" href="https://maps.google.com/?q=Noori+Foods+Adiyala+Road+Rawalpindi" target="_blank" rel="noopener"><span class="material-symbols-outlined">directions</span>Get directions</a></div>
+<div class="row"><a class="b l w" href="tel:03336666809"><span class="material-symbols-outlined">call</span>Call 0333 6666809</a></div></div>
+<div class="sec"><span class="kick">Patron memories</span><h2>Voices from the dastarkhwan</h2>
+<div class="rv"><b>Malik Tariq Mehmood</b> · ★★★★★<br><small>Local Guide</small><p>“The Special Rawal Platter is unmatched. Kababs were tender, spices balanced, and the lawn seating with family was peaceful.”</p></div>
+<div class="rv"><b>Zainab Farooq</b> · ★★★★★<br><small>Family dining</small><p>“Fresh desi chicken karahi prepared in front of us. Cozy ambiance in winter with fireplaces lit.”</p></div>
+<div class="rv"><b>Khurram Shahzad</b> · ★★★★☆<br><small>Dine-in</small><p>“Rohu fish was outstanding! Perfect late-night spot that stays open till 1 AM.”</p></div></div>
+</section>
+
+<section class="pg" id="p-admin">
+<div class="sec" style="margin-top:20px"><span class="kick">Owner tools</span><h2>Menu &amp; kitchen</h2></div>
+<div class="card adm"><div><b>Kitchen status: <span id="ks">ONLINE</span></b><br><small style="color:var(--mu)">Offline stops customers adding items</small></div><button class="b" id="kt">Toggle</button></div>
+<div class="note"><span class="material-symbols-outlined">info</span><span>Changes here apply only in this browser while the page is open. Permanent shared edits need a backend.</span></div>
+<input id="as" placeholder="Filter dishes by name…" style="margin-top:12px"><div id="al"></div>
+<div class="row"><a class="b l w" href="#home">Back to storefront</a></div>
+</section>
+
+<div class="foot">Noori Foods · Adiyala Road, Rawalpindi · <a href="#admin">Owner</a></div>
+</main>
+<div class="fl" id="fl"><div><span><b id="fc">0</b> items · <b class="sf" style="color:#ffe088" id="ft"></b></span><a class="b g" href="#checkout">View order →</a></div></div>
+<nav><div id="nv"><a href="#home" data-n="home"><span class="material-symbols-outlined">home</span>Home</a><a href="#menu" data-n="menu"><span class="material-symbols-outlined">restaurant_menu</span>Menu</a><a href="#checkout" data-n="checkout"><span class="material-symbols-outlined">shopping_bag</span>Order<span class="bg2" id="bd">0</span></a><a href="#visit" data-n="visit"><span class="material-symbols-outlined">pin_drop</span>Visit</a></div></nav>
+<script>
+const M=[
+{id:"rawal",c:"platters",n:"Special Rawal Platter",d:"Kabab, tikka boti, malai boti, Bukhari pulao, 2 roghani naans, raita. Feeds 2–3.",p:2950,e:"🍢"},
+{id:"pesh",c:"platters",n:"Peshawari Platter",d:"Chapli kabab, Shinwari boti, Kabuli pulao, tandoori kulcha. Feeds 3–4.",p:3450,e:"🍖"},
+{id:"fam",c:"platters",n:"Family Platter",d:"Full chicken karahi, 6 tikka boti, 4 seekh kabab, 4 naan, large pulao. Feeds 5–6.",p:5400,e:"🍛"},
+{id:"chap",c:"platters",n:"Chapli Kabab Platter",d:"4 crispy chapli patties, pomegranate and tomato, raita. Feeds 2.",p:1650,e:"🥩"},
+{id:"mkh",c:"karahi",n:"Chicken Makhni Karahi (half kg)",d:"Creamy butter-tomato gravy, desi ghee, crushed black pepper.",p:1590,e:"🍲"},
+{id:"mkf",c:"karahi",n:"Chicken Makhni Karahi (1 kg)",d:"Creamy butter-tomato gravy, desi ghee, crushed black pepper.",p:2850,e:"🍲"},
+{id:"shh",c:"karahi",n:"Mutton Shinwari (half kg)",d:"Salt, fresh tomatoes, green chillies, dum-cooked mutton.",p:2750,e:"🍲"},
+{id:"shf",c:"karahi",n:"Mutton Shinwari (1 kg)",d:"Salt, fresh tomatoes, green chillies, dum-cooked mutton.",p:4950,e:"🍲"},
+{id:"kg",c:"karahi",n:"Chicken Karahi Gosht",d:"Traditional gravy wok.",p:1450,e:"🍗"},
+{id:"kc",c:"karahi",n:"Karahi Chicken",d:"Spicy road-style wok.",p:1350,e:"🍗"},
+{id:"pul",c:"karahi",n:"Chicken Pulao",d:"Aromatic yakhni basmati.",p:650,e:"🍚"},
+{id:"qn",c:"karahi",n:"Qeema Naan",d:"Mutton mince tandoor naan.",p:380,e:"🫓"},
+{id:"tk",c:"bbq",n:"Chicken Tikka",d:"Marinated in yogurt and spices, coal-roasted (chest or leg).",p:420,e:"🍗"},
+{id:"tb",c:"bbq",n:"Tikka Boti Skewers",d:"8 tender boneless chunks, smoked pepper glaze.",p:890,e:"🍢"},
+{id:"rohu",c:"seafood",n:"Rohu Grilled Fish (per kg)",d:"Whole or boneless fillet, weighed fresh, ajwain and crushed red chilli.",p:1850,e:"🐟"},
+{id:"ft",c:"seafood",n:"Fish Tikka (4 pcs)",d:"Boneless cubes in mustard marinade.",p:1290,e:"🐟"},
+{id:"fc",c:"seafood",n:"Fish Chapli Kabab (2 pcs)",d:"Fish cakes shallow-fried in desi ghee.",p:980,e:"🐟"},
+{id:"ff",c:"seafood",n:"Crispy Fish Finger Basket",d:"Breaded fillets with garlic tartar.",p:1050,e:"🍤"},
+{id:"pz",c:"fastfood",n:"Special Noori Pizza",d:"Tikka-smoked meat, black olives, extra cheese.",p:1490,e:"🍕"},
+{id:"bg",c:"fastfood",n:"Burgers (zinger, shami, grilled)",d:"Choose zinger crunch, shami egg bun kabab or grilled patty.",p:580,e:"🍔"},
+{id:"sal",c:"sides",n:"Kachumber Salad",d:"Fresh diced.",p:150,e:"🥗"},
+{id:"rai",c:"sides",n:"Zeera Mint Raita",d:"Chilled curd.",p:180,e:"🥛"},
+{id:"chai",c:"sides",n:"Kashmiri Chai",d:"Pink tea with pistachio.",p:250,e:"🍵"}];
+const C={all:"All",platters:"Platters",karahi:"Karahi",bbq:"BBQ &amp; Tikka",seafood:"Seafood",fastfood:"Pizza &amp; Burgers",sides:"Sides &amp; Drinks"};
+const $=s=>document.querySelector(s),$$=s=>[...document.querySelectorAll(s)];
+const money=n=>"Rs. "+n.toLocaleString("en-US");
+const find=id=>M.find(x=>x.id===id);
+let on=true,cart={},mode="delivery",cat="all";
+const count=()=>Object.values(cart).reduce((a,b)=>a+b,0);
+const sub=()=>Object.entries(cart).reduce((a,[k,v])=>a+find(k).p*v,0);
+function item(x){const d=!on||x.so;return '<div class="it'+(x.so?" so":"")+'"><div class="th">'+x.e+'</div><div class="ib"><b>'+x.n+'</b><p>'+x.d+'</p><div class="pr"><span class="sf">'+money(x.p)+'</span><button class="b" data-add="'+x.id+'"'+(d?" disabled":"")+'>'+(x.so?"Sold out":"+ Add")+'</button></div></div></div>'}
+function rMenu(){
+$("#pl").innerHTML=Object.keys(C).map(k=>'<button data-cat="'+k+'" class="'+(k===cat?"a":"")+'">'+C[k]+'</button>').join("");
+$("#ml").innerHTML=M.filter(x=>cat==="all"||x.c===cat).map(item).join("");
+$("#hd").innerHTML=["rawal","mkh","rohu","pesh"].map(i=>item(find(i))).join("");
+$("#offn").hidden=on}
+function msg(){
+const del=mode==="delivery",g=i=>$(i).value.trim(),name=(del?g("#f-n"):g("#f-n2"))||"Valued guest",fee=del&&sub()>0?200:0;
+let t="*NOORI FOODS – RAWALPINDI ORDER*\n----------------------------\n*Customer:* "+name+"\n";
+if(del)t+="*Contact:* "+(g("#f-p")||"Not provided")+"\n*Fulfillment:* Home delivery\n*Area:* "+$("#f-a").value+"\n*Address:* "+(g("#f-d")||"N/A")+"\n*Landmark:* "+(g("#f-l")||"N/A")+"\n";
+else t+="*Fulfillment:* Takeaway / pickup\n";
+t+="*Notes:* "+(g("#f-o")||"None")+"\n\n*ORDER ITEMS:*\n";
+const e=Object.entries(cart);
+t+=e.length?e.map(([k,v],i)=>(i+1)+". "+find(k).n+" ("+v+"x) – "+money(find(k).p*v)).join("\n"):"(no items yet)";
+t+="\n\n- Subtotal: "+money(sub())+"\n- Delivery: "+money(fee)+"\n*TOTAL: "+money(sub()+fee)+"*\n----------------------------\n*Payment:* "+document.querySelector('input[name=py]:checked').value;
+return t}
+function rCheckout(){
+const e=Object.entries(cart),del=mode==="delivery",fee=del&&sub()>0?200:0;
+$("#cl").innerHTML=e.length?e.map(([k,v])=>'<div class="cl"><div><b>'+find(k).n+'</b><br><small style="color:var(--mu)">'+money(find(k).p)+' each</small></div><div class="q"><button data-q="'+k+':-1" aria-label="Remove one">−</button><b>'+v+'</b><button data-q="'+k+':1" aria-label="Add one">+</button></div></div>').join("")+'<div class="tot"><span>Subtotal</span><span>'+money(sub())+'</span></div><div class="tot"><span>Delivery</span><span>'+(fee?money(fee):"Free")+'</span></div><div class="tot g"><span>Total</span><span>'+money(sub()+fee)+'</span></div>':'<div class="empty">Your order is empty.<br><a href="#menu" style="color:var(--bt);font-weight:700">Browse the menu</a></div>';
+const t=msg();$("#pv").textContent=t;const w=$("#wa");w.href="https://wa.me/923336666809?text="+encodeURIComponent(t);w.setAttribute("aria-disabled",e.length?"false":"true");
+$("#df").hidden=!del;$("#pk").hidden=del;
+$$("[data-mode]").forEach(b=>b.classList.toggle("a",b.dataset.mode===mode))}
+function rAdmin(){
+const q=$("#as").value.toLowerCase();
+$("#ks").textContent=on?"ONLINE":"OFFLINE";
+$("#al").innerHTML=M.filter(x=>x.n.toLowerCase().includes(q)).map(x=>'<div class="card adm"><div><b>'+x.n+'</b><br><small style="color:var(--mu)">'+C[x.c]+'</small></div><div class="adm"><input type="number" min="0" step="10" value="'+x.p+'" data-price="'+x.id+'" aria-label="Price for '+x.n+'"><button class="b '+(x.so?"":"l")+'" data-stock="'+x.id+'">'+(x.so?"Sold out":"In stock")+'</button></div></div>').join("")}
+function badge(){
+const c=count();$("#bd").textContent=c;$("#bd").hidden=!c;$("#fc").textContent=c;$("#ft").textContent=money(sub());
+$("#fl").classList.toggle("on",c>0&&location.hash==="#menu");
+$("#st").textContent=on?"Closes 1 AM":"Kitchen closed";$("#sp").classList.toggle("off",!on)}
+function all(){rMenu();rCheckout();rAdmin();badge()}
+function route(){
+const h=location.hash.slice(1),p=["home","menu","checkout","visit","admin"].includes(h)?h:"home";
+$$("section.pg").forEach(s=>s.classList.toggle("on",s.id==="p-"+p));
+$$("nav a").forEach(a=>a.classList.toggle("a",a.dataset.n===p));
+badge();window.scrollTo(0,0)}
+document.addEventListener("click",e=>{
+const t=e.target.closest("[data-add],[data-q],[data-cat],[data-mode],[data-stock],#kt,#cp,#wa");if(!t)return;
+const d=t.dataset;
+if(d.add&&on){cart[d.add]=(cart[d.add]||0)+1;all()}
+else if(d.q){const[k,n]=d.q.split(":");cart[k]=(cart[k]||0)+Number(n);if(cart[k]<=0)delete cart[k];all()}
+else if(d.cat){cat=d.cat;rMenu()}
+else if(d.mode){mode=d.mode;rCheckout()}
+else if(d.stock){const x=find(d.stock);x.so=!x.so;all()}
+else if(t.id==="kt"){on=!on;all()}
+else if(t.id==="cp"){try{navigator.clipboard.writeText($("#pv").textContent).then(()=>{$("#cpt").textContent="Copied!";setTimeout(()=>$("#cpt").textContent="Copy",1800)}).catch(()=>{})}catch(x){}}
+else if(t.id==="wa"&&!count()){e.preventDefault()}});
+document.addEventListener("change",e=>{const id=e.target.dataset.price;if(id){const v=Math.max(0,Number(e.target.value)||0);find(id).p=v;all()}});
+document.addEventListener("input",e=>{if(e.target.closest("#p-checkout"))rCheckout();if(e.target.id==="as")rAdmin()});
+window.addEventListener("hashchange",route);
+all();route();
+</script>
+</body></html>
